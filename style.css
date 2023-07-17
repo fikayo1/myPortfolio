@@ -54,6 +54,7 @@ nav{
     display: flex;
     padding: 3%;
     
+    
 }
 nav h3{
     float: left;
@@ -351,30 +352,42 @@ footer p{
 
 /* Media query for small screens (e.g., mobile devices) */
 @media screen and (max-width: 768px) {
+    header {
+        display: block;
+    }
     .left-header {
         width: 100%;
         margin-left: 0;
         margin-bottom: 0;
-        padding-bottom: 50%;
+        padding-bottom: 0%;
     }
 
     .rightheader {
         width: 100%;
+        margin: 0;
         margin-bottom: 2rem;
         padding-bottom: 50%;
+    }
+    .indivdual{
+        display: block;
     }
 
     .rightheader img {
         padding-bottom: 50%;
     }
 
-    .nav {
+    nav {
+        color: white;
+        background-color:#07102C ;
         flex-direction: column;
         gap: 10px;
     }
+    nav ul a{
+        color: white;
+    }
 
     .link2, .link3, .link4 {
-        width: 100%;
+        width: 30%;
         justify-content: center;
     }
 
@@ -385,37 +398,63 @@ footer p{
     .right form {
         width: 100%;
     }
+    .contact{
+        display: block;
+    }
 }
 
 /* Media query for medium screens (e.g., tablets) */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+    header {
+        display: block;
+    }
     .left-header {
-        width: 80%;
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 0;
+        padding-bottom: 0%;
     }
 
     .rightheader {
-        width: 20%;
-        margin-bottom: 0;
+        width: 100%;
+        margin: 0;
+        margin-bottom: 2rem;
+        padding-bottom: 50%;
+    }
+    .indivdual{
+        display: block;
     }
 
     .rightheader img {
-        padding-bottom: 20%;
+        padding-bottom: 50%;
     }
 
-    .nav {
-        flex-direction: row;
-        gap: 20px;
+    nav {
+        color: white;
+        background-color:#07102C ;
+        flex-direction: column;
+        gap: 10px;
+    }
+    nav ul a{
+        color: white;
     }
 
     .link2, .link3, .link4 {
-        width: 50%;
+        width: 30%;
+        justify-content: center;
     }
 
     .me, .right {
-        width: 70%;
+        width: 90%;
+    }
+
+    .right form {
+        width: 100%;
+    }
+    .contact{
+        display: block;
     }
 }
-
 /* Media query for large screens (e.g., laptops and desktops) */
 /* @media screen and (min-width: 1025px) {
     .left-header {
